@@ -42,29 +42,31 @@
   }
 
   .hero-banner {
-    height: 20vh;
-    background-image: url(../images/02-hero-bg.jpg);
+    height: 35vh;
+    background-image: url(../images/Eliean\ Donan\ Castle\,\ Scottish\ Highlands.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: inherit;
+    background-size:cover;
+    max-width:inherit
   }
 
   .hero-banner h2 {
     display: flex;
-    justify-content: flex-end;
+    color: white;
+    justify-content: flex-start;
+    align-items:flex-end;
     margin-right: 125px;
     margin: 30px;
   }
 
-
   .grid-container {
     display: grid;
     height: 80vh;
-    min-height: fit-content;
     grid-template-rows: 20% 35% 40% 5%;
     grid-template-columns: 180px 1fr 1fr 1fr;
     grid gap: 5px;
     grid-template-areas:
-      "aboutSide aboutText aboutText aboutText"
+      "aboutSide aboutText aboutText myPhoto"
       "workSide workLarge workLarge workLarge"
       "workSide subGrid subGrid subGrid"
       "contactSide contacts contacts contacts"
@@ -93,7 +95,20 @@
 
   #aboutText {
     grid-area: aboutText;
+    min-height: ;
   }
+
+  #myPhoto {
+    grid-area: myPhoto;
+    background-image: url(../images/DF\ cwg.jpg);
+    background-repeat: no-repeat;
+    max-height:max-content;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 5px;
+
+  }
+
 
   #workSide {
     grid-area: workSide;
@@ -101,17 +116,39 @@
 
   #workLarge {
     grid-area: workLarge;
-    background-image: url(../images/02-portfolio-4.jpg);
+    background-image: url(../images/PXL_20210902_110858445.jpg);
+    background-size:cover;
+    background-position: 0px;
+    margin: px;
+    color:white;
   }
-    
+
+  #workLarge h4 {
+    color:black;
+   
+      }
+
+  #workLarge p {
+    display: flex;
+    align-items: flex-end;
+color:black;
+
+  }
+
   #subGrid {
-grid-area: subGrid;
+    grid-area: subGrid;
+  }
+
+  .sub-grid-item {
+    padding: 10px;
+    padding-bottom: 50px;
+    margin: 10px;
   }
 
   .sub-grid-container {
     display: grid;
-    background-color:;
-    padding: 10px;
+    background-color: ;
+    padding: 0px;
     margin: 10px;
     border: 10px;
     grid-template-rows: 50% 50%;
@@ -124,6 +161,9 @@ grid-area: subGrid;
   #workSmall1 {
     grid-area: workSmall1;
     background-color: blue;
+    background-image: url(../images/adeptus-site.png);
+    background-size: cover;
+
   }
 
   #workSmall2 {
@@ -145,21 +185,22 @@ grid-area: subGrid;
     grid-area: contactSide;
   }
 
-  .sub-grid-item {
-    padding: 20px;
-    padding-bottom: 50px;
-    margin: 10px;
- 
-  }
-
   #contacts {
     grid-area: contacts;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: start;
   }
 
+h2 {
+  color: white;
+  padding: 190px 0px;
+}
+.hero-banner p {
+  color:white;
+  margin: -200px 30px;
 
+}
 
 
 
